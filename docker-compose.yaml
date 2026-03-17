@@ -1,0 +1,17 @@
+services:
+  react-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: master-nana-frontend
+    ports:
+      - "3000:80"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - nana-network
+
+networks:
+  nana-network:
+    driver: bridge
