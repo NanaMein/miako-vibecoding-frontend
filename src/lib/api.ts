@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://api.miako.app';
+const BASE_URL = 'https://api.miako.app';
 
 export async function apiFetch(endpoint: string, options: RequestInit = {}) {
   let accessToken = localStorage.getItem('access_token');

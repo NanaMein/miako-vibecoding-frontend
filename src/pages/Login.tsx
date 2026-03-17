@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Bot, Mail, Lock, Loader2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const BASE_URL = 'https://api.miako.app';
 
 export default function Login() {
   const [email, setEmail] = useState('');
